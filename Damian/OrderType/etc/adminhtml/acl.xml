@@ -1,0 +1,22 @@
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Damian_OrderType::config_order_type_manager" title="Order Type Manager Module" sortOrder="10" />
+                <resource id="Damian_OrderType::index" title="Index">
+                    <resource id="Damian_OrderType::index" title="Index"/>
+                </resource>
+                <resource id="Damian_OrderType::add" title="Add">
+                    <resource id="Damian_OrderType::index" title="Index"/>
+                </resource>
+                <resource id="Damian_OrderType::edit" title="Edit">
+                    <resource id="Damian_OrderType::index" title="Index"/>
+                </resource>
+                <resource id="Damian_OrderType::delete" title="Delete">
+                    <resource id="Damian_OrderType::index" title="Index"/>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

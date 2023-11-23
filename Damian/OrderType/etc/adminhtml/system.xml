@@ -1,0 +1,16 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="order_type_manager_section" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Order Type Manager</label>
+            <tab>advanced</tab>
+            <resource>Damian_OrderType::config_order_type_manager</resource>
+            <group id="order_type_manager_options" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Order Types Manager</label>
+                <field id="order_type_manager_text" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Order Types</label>
+                    <frontend_model>Damian\OrderType\Block\Adminhtml\System\Config\Form\Field\OrderTypesText</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
